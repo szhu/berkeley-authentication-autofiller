@@ -1,0 +1,16 @@
+{
+   "content_scripts": [ {
+      "js": [ "CalNet.js" ],
+      "matches": [ "https://auth.berkeley.edu/cas/login", "https://auth.berkeley.edu/cas/login?*", "https://auth.berkeley.edu/cas//login", "https://auth.berkeley.edu/cas//login?*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Simplify the login process on auth.berkeley.edu.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4+C2+yk0ImWKmR0LDBOM3E1j3i7yYe90Qg2/fh0X4R0QNAbwlxHk3du7ndXLigJtb4pQQ8bgIo8OPi6FQVYscwpOSCHrc+1ZmAQ687asQpCuelFdEKHb9Ub1bTIibsY5mvVfuQXUZwL9tfTXqk96qt1avLPPWY7QVQZn6x2nTSQIDAQAB",
+   "manifest_version": 2,
+   "name": "Berkeley Authentication Autofiller",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.2.2"
+}
